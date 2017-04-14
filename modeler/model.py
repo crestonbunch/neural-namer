@@ -2,7 +2,7 @@ import math
 import numpy as np
 import tensorflow as tf
 from modeler.context_cell import ContextRNNCell
-from tensorflow.contrib.rnn import GRUCell, LSTMCell, MultiRNNCell
+from tensorflow.contrib.rnn import MultiRNNCell
 
 def init_network(vocab_size, author_size, num_hidden, num_cells):
     """Initialize an untrained network."""
@@ -19,7 +19,10 @@ def init_network(vocab_size, author_size, num_hidden, num_cells):
     batch_size = tf.shape(sequence)[0]
     max_length = tf.shape(sequence)[1]
 
-    cell = MultiRNNCell([ContextRNNCell(num_hidden, author_size) for _ in range(num_cells)])
+    cell = MultiRNNCell([
+        ContextRNNCell(num_hidden, author_size)
+        for _ in range(num_cells)]
+    )
     init_state = cell.zero_state(batch_size, tf.float32)
 
     inputs = tf.concat([one_hot_sequence, one_hot_authors], axis=2)
@@ -62,26 +65,6 @@ def init_network(vocab_size, author_size, num_hidden, num_cells):
 def length(sequence):
     """Compute the length of a zero-padded sequence by ignoring the 0's."""
     return tf.count_nonzero(sequence, axis=1)
-
-def cost(labels=None, logits=None):
-    """Compute the cross entropy of the output with the target."""
-    vocab_size = tf.shape(logits)[1]
-    mask = tf.cast(tf.sign(tf.reshape(labels, (-1, 1))), tf.float32)
-    labels = tf.reshape(tf.one_hot(labels, vocab_size), (-1, vocab_size))
-    logits = tf.cast(logits, tf.float32)
-    cross_entropy = -(labels * tf.log(logits)) * tf.tile(mask, [1, vocab_size])
-    cross_entropy = tf.reduce_sum(cross_entropy, axis=1)
-    return tf.reduce_mean(cross_entropy)
-
-def last_relevant(output, length):
-    """Select the last relevant frame of the output to feed to classifier."""
-    batch_size = tf.shape(output)[0]
-    max_length = tf.shape(output)[1]
-    out_size = int(output.get_shape()[2])
-    index = tf.range(0, batch_size) * max_length + (length - 1)
-    flat = tf.reshape(output, [-1, out_size])
-    relevant = tf.gather(flat, index)
-    return relevant
 
 def sample(
     sess, seq_node, author_node, cell_node, init_node, state_node, 

@@ -77,138 +77,138 @@ Example output
 
 ### Tolkien
 
-    Frais
-    Laurin Took Cretor Higmar
-    Frise Toreel
-    Grad
-    Ta Brand
-    Nimet
-    Ise
-    Brag
-    Her
-    Erel
-    Heeldos
-    Grod Rotion
-    Báln Foolmut
-    Dímandun
-    Ara
-    Indil
-    Hamhâno
-    Leur
-    Ta chang
-    Ner
+    Han
+    Agnand
+    Étur
+    Vandob
+    Finborrin Pooklid
+    Fornon oof TookI
+    Vand
+    Elda
+    Inn
+    Dírathf Brandybuck
+    Mahin
+    Frual
+    Firnon
+    Gron
+    Tured erren
+    Han
+    Ghâdan
+    DírSon II
+    Mig or
+    Wilil II
 
 ### George Martin
 
-    Nug /'Daldon
-    Rhen
-    Nur
-    Drey Coptery
-    Lyanangler
-    Bar
-    Denn KerLtan
-    Dan Lalkornim
-    Kissscot
-    Jaen Ryme Larlth
-    Sten Loot mongears Tybutanf
-    Brondee
-    Tahrenor
-    Drim Wophis Dury of Do
-    Dou Dilatter
-    Drigori
-    Mys
-    Vion Graz
-    King
-    Dorlo
+    Jae Kanot
+    Tan drandigg 2
+    Cor Lahn
+    Wit Gormpndal
+    Amrusteites
+    Tor of ic taump
+    Loiss Wilie Morrsten
+    Amrush
+    Crigl
+    Shomag
+    Tyr sr theverry Throprath
+    Smone
+    Tweilleo
+    Mak roundall
+    Syvlorthvonk
+    Kimmie
+    Hea
+    Vil Andic
+    Rha'Er doust
+    Vol Ceampal
 
 ### Robert Jordan
 
-    Carion
-    Tira
-    Kie Sedaridos
-    Haak
-    Sular
-    Carien
-    Cloman
-    Elon Homa Argarin
-    ellin Stane
-    Ban Avarat
-    Suloul
-    Atrak
-    Shadin
-    Masa
-    Muar
-    Jho
-    Muan Gadewial
-    Eyl
-    Wiam Elaivi
-    Alia Karald
+    zah
+    Bran
+    Sanasis
+    Mat Aem
+    Fla
+    Brapan
+    Mutr Afilen
+    Morien
+    Jar
+    Sanas
+    Grevan
+    Mos
+    Par
+    Yal Anhalis
+    Mag
+    Nal
+    Cya hiel
+    Roain
+    Carre
+    Esi
 
 ### Steven Erikson
 
-    Shan
-    Lun
-    Rala
-    Hur
-    Far
-    Rala
-    Lusrin
-    Pule prrich
-    Buder
-    Udder
-    Nathen
-    Hern Senvin
-    Vethen
-    Mas Dog
-    Miss Rucche
-    Mes
-    Sham
-    Had Stad
-    Trae
-    Prem
+    Becart
+    Fersaune
+    Son
+    D'allicad
+    Kul Rean
+    Mousesh
+    Sten
+    Den
+    Cort
+    Rilt
+    Inn Deart
+    Sal
+    Thant
+    Pan
+    Micha E'shoris
+    Beca Wor
+    Esele
+    Bra
+    Nit
+    Ster
 
 ### Brian Jacques
 
-    Gree
-    Pety
-    Craladge
+    Sin Doallo
+    Craduner
+    Vil Rope
+    Law
+    Bang
+    Gogutle
+    Scas
+    Duf
+    Dicale
+    Bra
+    Tul
+    Dager
+    Tuk
+    Jot
+    Ragall
+    Brzry
+    Karo
+    Hore
     Rug
-    Rig
-    Bula Frron
-    Gree Larl
-    Nur
-    Frak
-    Grin
-    Ruf
-    Gur  hange
-    For
-    Bara
-    Gus Swong
-    Taic
-    Sill
-    Chaisiood
-    Dree
-    Witer Speny
+    Vencw
 
 ### Frank Herbert
 
-    Aleeg Ifla
-    Kans
-    Ham Naj
-    Iaba Forrow
-    Crollung/XD
-    Feda
-    Madton Corfloo
-    Shan torlugon
-    Gitter
-    Giiss
-    Zolint
-    Heva
-    Vinar Forkino
-    Ham Ala
-    Cooneth
-    Mugandig
-    Hema
-    Ham Bonkilor Toliennone
-    Pate Alacan
-    Gana Rtovil
+    Ham Vigaty
+    Yut Gookbooth
+    Phir Heurvoce
+    Jai Ghalpawnge
+    Ede Bawos
+    Hol Cadgett
+    Aliant
+    Mais Thurighter
+    Vandar
+    Hoat
+    Hia (Haggengol
+    Scoch
+    Deum
+    Ham
+    Aur Ajumg
+    Hesk II
+    Crace
+    Xad Toculis
+    Paced
+    Kanto
