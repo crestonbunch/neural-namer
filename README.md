@@ -51,10 +51,10 @@ Train the model
 Generate names
 --------------
 
-    $ model train --in preprocessor/data/vectors.pkl \
-                  --lookup preprocessor/data/lookup.pkl \
-                  --log modeler/logs/1 \
-                  --author "Tolkien"
+    $ model gen --in preprocessor/data/vectors.pkl \
+                --lookup preprocessor/data/lookup.pkl \
+                --log modeler/logs/1 \
+                --author "Tolkien"
 
 Replace 'Tolkien' with another author:
 
