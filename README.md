@@ -77,123 +77,123 @@ Example output
 
 ### Tolkien
 
-    Han
-    Agnand
-    Étur
-    Vandob
-    Finborrin Pooklid
-    Fornon oof TookI
-    Vand
-    Elda
-    Inn
-    Dírathf Brandybuck
-    Mahin
-    Frual
-    Firnon
-    Gron
-    Tured erren
-    Han
-    Ghâdan
-    DírSon II
-    Mig or
-    Wilil II
+    Griin
+    Arrucda
+    Urfaelt
+    Firaicth
+    Caadbuaurk
+    Romie
+    Findod
+    Waor
+    Jareë
+    Grlaor
+    Carthad G
+    Halno
+    Zarahoo Boffin
+    Harn
+    Pelan
+    Doera
+    Donilatad
+    Quillia
+    Vardul
+    Xilanar
 
 ### George Martin
 
-    Jae Kanot
-    Tan drandigg 2
-    Cor Lahn
-    Wit Gormpndal
-    Amrusteites
-    Tor of ic taump
-    Loiss Wilie Morrsten
-    Amrush
-    Crigl
-    Shomag
-    Tyr sr theverry Throprath
-    Smone
-    Tweilleo
-    Mak roundall
-    Syvlorthvonk
-    Kimmie
-    Hea
-    Vil Andic
-    Rha'Er doust
-    Vol Ceampal
+    Daria Lannister
+    Corter Prke
+    Urrall Bne she Sho's's tarter
+    Elsalaene
+    Yuun Royce
+    Ordy'n
+    Aegyon Targaryen
+    Elier srontise
+    Elyra Snokhare
+    Xiro Harlale
+    Wanon
+    Garla
+    Lonnel Rannister
+    Hagh Sparrow
+    Quentien guarder
+    Xicen Taover
+    Samlis
+    Marchant captain
+    Hagh Sriester
+    Aeeo
 
 ### Robert Jordan
 
-    zah
-    Bran
-    Sanasis
-    Mat Aem
-    Fla
-    Brapan
-    Mutr Afilen
-    Morien
-    Jar
-    Sanas
-    Grevan
-    Mos
-    Par
-    Yal Anhalis
-    Mag
-    Nal
-    Cya hiel
-    Roain
-    Carre
-    Esi
+    Hardla
+    Falle
+    DaranieCapmaai
+    Haraai
+    Elis aLaudaw
+    Janric aegiil
+    Innlla Lewin
+    Alineal
+    Harn
+    Larraan
+    Waninlla Narencelona
+    Darane Larnaak
+    Larrid
+    Ronaan
+    Ron Marwn
+    Karhlaa
+    Invyn al'Vanr
+    Falrnl  Cndhom
+    Malaail
+    Janii Lollin
 
 ### Steven Erikson
 
-    Ragt
-    Kalt
-    Jal
-    Rank
-    Dulrus
-    Haran
-    Uruat
-    Ragit Hands
-    Coalsr
-    Yuldac
-    Luahro
-    Falllos
-    Zarala
-    Zalcl
-    Yurand
-    Vaster
-    Faraoena
-    Quill
-    Yulitalall
-    Jale
+    Yulka
+    Nelb
+    Uru an
+    Zailh
+    Elaat
+    Jaels
+    Yullck
+    Duligen
+    Nerpl
+    Dulsemfrce
+    Inahrath Godes
+    Duasuk Of A'nan
+    Jalll
+    Wais
+    Sallrss
+    Xiaaelea
+    Talmsk
+    Kallin
+    Nerpera
+    InarhnalSoleeu
 
 ### Brian Jacques
 
-    Vilga
-    Brrlcolr
-    Jaesate
-    Peiesuiss
-    Fregrack
-    Haartw
-    Alrak Burkuleu
-    Younbleg
-    King Barshy
-    Yorka
-    Braver
-    Wildpaar
-    Haotwingle
-    Tuungle
-    Perler
-    Friggln
-    Nitclaw
-    Tuungle
-    Margadal
-    Tuunbsu Sigooch
+    Oreu
+    Viglag
+    Brother Frngle
+    Zaigga
+    ViglSl'Caus
+    Haoheaw
+    Siiger
+    Luny Firdatcu
+    Duana I
+    Turmscotk ail
+    Yooker
+    NirguSonglawol
+    Nirgue
+    Grrrl
+    TurblMigool
+    Jarglg
+    Wiibd
+    Inil
+    Vigl tarissuut
+    Vigka Longtooth
 
 ### Frank Herbert
 
     Xirdena Torei
-    Harimir Fenring/XD
+    Harimir Fenring/XDj
     Leto Atreides I
     Ininis a
     Kales Atreides
