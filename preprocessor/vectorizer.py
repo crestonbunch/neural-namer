@@ -19,9 +19,9 @@ def vectorize_file(infile, lookupfile, outfile):
 
         for sample in samples:
             author = sample['author']
-            pad = [0] * (max_len - len(sample['name']))
-            name = [''] + list(sample['name']) + ['']
-            vec = [input_map[c] for c in name] + pad
+            #pad = [0] * (max_len - len(sample['name']))
+            name = list(sample['name']) + ['']
+            vec = [input_map[c] for c in name]# + pad
             outsamples.append(vec)
             outauthors.append(label_map[author])
 

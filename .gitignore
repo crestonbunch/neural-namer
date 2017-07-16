@@ -4,8 +4,10 @@ cache/
 logs/
 *.log
 *.pkl
+models/
 
 # config files
+
 config.json
 
 # ide files

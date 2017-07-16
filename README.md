@@ -46,14 +46,14 @@ Preprocess data
 Train the model
 ---------------
 
-    $ model train --in preprocessor/data/vectors.pkl --log modeler/logs/1
+    $ model train --data preprocessor/data/vectors.pkl --save modeler/logs/1
 
 Generate names
 --------------
 
-    $ model gen --in preprocessor/data/vectors.pkl \
+    $ model gen --data preprocessor/data/vectors.pkl \
                 --lookup preprocessor/data/lookup.pkl \
-                --log modeler/logs/1 \
+                --save modeler/logs/1 \
                 --author "Tolkien"
 
 Replace 'Tolkien' with another author:
@@ -146,69 +146,69 @@ Example output
 
 ### Steven Erikson
 
-    Becart
-    Fersaune
-    Son
-    D'allicad
-    Kul Rean
-    Mousesh
-    Sten
-    Den
-    Cort
-    Rilt
-    Inn Deart
-    Sal
-    Thant
-    Pan
-    Micha E'shoris
-    Beca Wor
-    Esele
-    Bra
-    Nit
-    Ster
+    Ragt
+    Kalt
+    Jal
+    Rank
+    Dulrus
+    Haran
+    Uruat
+    Ragit Hands
+    Coalsr
+    Yuldac
+    Luahro
+    Falllos
+    Zarala
+    Zalcl
+    Yurand
+    Vaster
+    Faraoena
+    Quill
+    Yulitalall
+    Jale
 
 ### Brian Jacques
 
-    Sin Doallo
-    Craduner
-    Vil Rope
-    Law
-    Bang
-    Gogutle
-    Scas
-    Duf
-    Dicale
-    Bra
-    Tul
-    Dager
-    Tuk
-    Jot
-    Ragall
-    Brzry
-    Karo
-    Hore
-    Rug
-    Vencw
+    Vilga
+    Brrlcolr
+    Jaesate
+    Peiesuiss
+    Fregrack
+    Haartw
+    Alrak Burkuleu
+    Younbleg
+    King Barshy
+    Yorka
+    Braver
+    Wildpaar
+    Haotwingle
+    Tuungle
+    Perler
+    Friggln
+    Nitclaw
+    Tuungle
+    Margadal
+    Tuunbsu Sigooch
 
 ### Frank Herbert
 
-    Ham Vigaty
-    Yut Gookbooth
-    Phir Heurvoce
-    Jai Ghalpawnge
-    Ede Bawos
-    Hol Cadgett
-    Aliant
-    Mais Thurighter
-    Vandar
-    Hoat
-    Hia (Haggengol
-    Scoch
-    Deum
-    Ham
-    Aur Ajumg
-    Hesk II
-    Crace
-    Xad Toculis
-    Paced
-    Kanto
+    Xirdena Torei
+    Harimir Fenring/XD
+    Leto Atreides I
+    Ininis a
+    Kales Atreides
+    Ordm
+    Jamoi
+    Xirdon Corrino
+    Xidd  Cenniuu
+    Chali KynesXD
+    Marie Botler
+    GarliXD
+    Maruy
+    Duria  Harkonnen
+    Alixandrr
+    BuuanBhxper
+    Virgia Aiallg
+    ZanaraTerk
+    Gainoos
+    Garual Cane

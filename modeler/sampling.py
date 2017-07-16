@@ -9,7 +9,11 @@ def batch_samples(samples, authors, batch_size):
         targets.append(target)
         auths.append([auth] * len(seq))
         if len(seqs) >= batch_size:
-            yield seqs, targets, auths
+            yield _pad_batch(seqs), _pad_batch(targets), _pad_batch(auths)
             seqs, targets, auths = [], [], []
 
-    yield seqs, targets, auths
+    yield _pad_batch(seqs), _pad_batch(targets), _pad_batch(auths)
+
+def _pad_batch(batch):
+    max_len = max([len(x) for x in batch])
+    return [x + [0]*(max_len - len(x)) for x in batch]
