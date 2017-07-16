@@ -77,138 +77,138 @@ Example output
 
 ### Tolkien
 
-    Griin
-    Arrucda
-    Urfaelt
-    Firaicth
-    Caadbuaurk
-    Romie
-    Findod
-    Waor
-    Jareë
-    Grlaor
-    Carthad G
-    Halno
-    Zarahoo Boffin
-    Harn
-    Pelan
-    Doera
-    Donilatad
-    Quillia
-    Vardul
-    Xilanar
+    Qunorthin
+    Penny (Baggins) Burrows
+    Jase
+    Khlair
+    Wilan
+    Qunaoth
+    Elehild
+    Argeor
+    Haldir
+    Romendacil II
+    Wilda
+    Befgo Baggins II
+    Yávien
+    Halor
+    Inmarë
+    Ele Ilúvatar
+    Rosa Greenhand
+    Galdberry
+    Queel
+    Sarudas Brandybuck
 
 ### George Martin
 
-    Daria Lannister
-    Corter Prke
-    Urrall Bne she Sho's's tarter
-    Elsalaene
-    Yuun Royce
-    Ordy'n
-    Aegyon Targaryen
-    Elier srontise
-    Elyra Snokhare
-    Xiro Harlale
-    Wanon
-    Garla
-    Lonnel Rannister
-    Hagh Sparrow
-    Quentien guarder
-    Xicen Taover
-    Samlis
-    Marchant captain
-    Hagh Sriester
-    Aeeo
+    Wild man
+    Garean Tyrell
+    Kinarro
+    Orpyle
+    Qhrro
+    Stiera Seastar
+    Kingara
+    Xaro Xhoan Daxos
+    Rockard Lonmouth
+    Ormic Stark
+    Pept Pree
+    Vaserys IITargaryen
+    Joseya Frey
+    Inoi
+    Lonlsa  Stokeworth
+    StmTarly
+    Unfana
+    Stice King
+    Nirven
+    Argon I I Targaryen
 
 ### Robert Jordan
 
-    Hardla
-    Falle
-    DaranieCapmaai
-    Haraai
-    Elis aLaudaw
-    Janric aegiil
-    Innlla Lewin
-    Alineal
-    Harn
-    Larraan
-    Waninlla Narencelona
-    Darane Larnaak
-    Larrid
-    Ronaan
-    Ron Marwn
-    Karhlaa
-    Invyn al'Vanr
-    Falrnl  Cndhom
-    Malaail
-    Janii Lollin
+    Vaealne Garman
+    Qiine
+    Allon
+    Nalomi
+    Zanion
+    Marem
+    Garyn Trranand
+    Lacine
+    Ha Marran
+    Janyde
+    Carvele
+    Vaeia Connoral
+    WiiTomfaine
+    Qie
+    Romela Cindal
+    Teal n
+    Vaeia Connoral
+    Barlin
+    Ferain
+    Yakobin
 
 ### Steven Erikson
 
-    Yulka
-    Nelb
-    Uru an
-    Zailh
-    Elaat
-    Jaels
-    Yullck
-    Duligen
-    Nerpl
-    Dulsemfrce
-    Inahrath Godes
-    Duasuk Of A'nan
-    Jalll
-    Wais
-    Sallrss
-    Xiaaelea
-    Talmsk
-    Kallin
-    Nerpera
-    InarhnalSoleeu
+    Nerarkr
+    Esesthila
+    Xrrloc
+    Urenaas
+    Reth'D'rek
+    Ormal
+    Netra
+    Wieneck
+    Chrpala
+    Janalh
+    Chraran
+    Grenmrog
+    Irgast Rend
+    Nersaras
+    Grnlan
+    Serrl
+    Reulad Sengar
+    Oral
+    Yeaki
+    Xrddershins
 
 ### Brian Jacques
 
-    Oreu
-    Viglag
-    Brother Frngle
-    Zaigga
-    ViglSl'Caus
-    Haoheaw
-    Siiger
-    Luny Firdatcu
-    Duana I
-    Turmscotk ail
-    Yooker
-    NirguSonglawol
-    Nirgue
-    Grrrl
-    TurblMigool
-    Jarglg
-    Wiibd
-    Inil
-    Vigl tarissuut
-    Vigka Longtooth
+    Thubbaggs
+    Dankle
+    Urcril
+    Orlback
+    Darfle
+    Mario
+    Urtan
+    Arrum Vole
+    DainpMie Slayer
+    Ringar Skurr
+    Wilger
+    Riona Stinkh
+    Daubblewick
+    Zailt the Shade
+    Zarig
+    Ardis
+    YooKarr
+    Marfo
+    Laddtail
+    Ord Jarge
 
 ### Frank Herbert
 
-    Xirdena Torei
-    Harimir Fenring/XDj
-    Leto Atreides I
-    Ininis a
-    Kales Atreides
-    Ordm
-    Jamoi
-    Xirdon Corrino
-    Xidd  Cenniuu
-    Chali KynesXD
-    Marie Botler
-    GarliXD
-    Maruy
-    Duria  Harkonnen
-    Alixandrr
-    BuuanBhxper
-    Virgia Aiallg
-    ZanaraTerk
-    Gainoos
-    Garual Cane
+    Paudoid Valleck
+    Yoette Hagal
+    Jenar
+    Mares
+    Orlop
+    Chaopatra
+    Wensicia Corrino
+    Thelia Ietler
+    Paidias Latzko
+    Hapar Fen Ajidica
+    Yorek Thurr
+    Quentin Butler
+    Leechine
+    Jenets Milam
+    Duncmis Atreides
+    Narma Cenva/XD
+    Uliet
+    Wensicia Corrino
+    Werdra Butler
+    Garusne Itreides
