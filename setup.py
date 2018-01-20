@@ -12,6 +12,7 @@ setup(
             "crawl=crawler.commands:main",
             "preprocess=preprocessor.commands:main",
             "model=modeler.commands:main",
+            "cache=web.cache.commands:main",
         ]
     }
 )

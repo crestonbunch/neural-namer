@@ -1,10 +1,9 @@
-"""A contextual RNN cell as described in 
-https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/rnn_ctxt.pdf"""
+"""A wrapper for an RNN cell that encodes context."""
 
 import tensorflow as tf
 import math
 from collections import namedtuple
-from tensorflow.contrib.rnn import RNNCell
+from tensorflow.contrib.rnn import RNNCell, LSTMStateTuple
 
 class ContextState(namedtuple("ContextState", ("cell_state", "time"))):
     def clone(self, **kwargs):
@@ -13,7 +12,7 @@ class ContextState(namedtuple("ContextState", ("cell_state", "time"))):
 class ContextWrapper(RNNCell):
     """Wraps an RNN cell with context."""
 
-    def __init__(self, cell, context, activation=tf.nn.relu):
+    def __init__(self, cell, context, activation=tf.identity):
         super().__init__()
         self._cell = cell
         self._context = context
@@ -36,19 +35,31 @@ class ContextWrapper(RNNCell):
         )
 
     def __call__(self, inputs, state, scope=None):
-        cell_state, cell_output = self._cell(inputs, state.cell_state, scope)
-
+        cell_output, cell_state = self._cell(inputs, state.cell_state, scope)
         context_len = tf.shape(self._context)[1]
+        context_input = self._context[:, state.time % context_len, :]
 
-        context_state = self._activation(tf.layers.dense(
-            self._context[:, state.time % context_len, :], self._cell.state_size
-        ) + cell_state)
+        # First we add context weighting to the cell state
+        output_size = self._cell.output_size
+        if isinstance(self._cell.state_size, LSTMStateTuple):
+            # For LSTM cells we only apply context to the cell state
+            state_size = self._cell.state_size.c
+            context_state = tf.concat([cell_state.c, context_input], axis=1)
+            context_layer = tf.layers.dense(context_state, state_size)
+            context_state = LSTMStateTuple(
+                c=self._activation(context_layer),
+                h=cell_state.h
+            )
+        else:
+            state_size = self._cell.state_size
+            context_state = tf.concat([cell_state, context_input], axis=1)
+            context_layer = tf.layers.dense(context_state, state_size)
+            context_state = self._activation(context_layer)
 
-        context_output = self._activation(tf.layers.dense(
-            self._context[:, state.time % context_len, :], self._cell.output_size
-        ) + tf.layers.dense(
-            cell_output, self._cell.output_size
-        ))
+        # Next we apply context weighting to the cell output
+        context_output = tf.concat([cell_output, context_input], axis=1)
+        context_layer = tf.layers.dense(context_output, output_size)
+        context_output = self._activation(context_layer)
 
         return context_output, ContextState(
             time=state.time + 1,

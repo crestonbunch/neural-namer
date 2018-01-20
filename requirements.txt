@@ -3,3 +3,9 @@ tensorflow-gpu
 lxml
 pyunpack
 patool
+flask
+redis
+flask-redis
+gunicorn
+paramiko
+scp

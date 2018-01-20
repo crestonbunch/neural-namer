@@ -4,37 +4,54 @@ import re
 import os
 import os.path
 import pickle
+import csv
 import urllib.request
 import tempfile
 from pyunpack import Archive
 from lxml import etree
 from lxml.etree import XMLParser
-from collections import defaultdict
+from collections import Counter
 
 from crawler.wikia.sources import SOURCES
 
 def fetch(outfile):
     """Fetch character names from sources and save them to the outfile."""
-    data = []
-    counts = defaultdict(int)
+    authors = Counter()
+    vocab = Counter()
 
     parser = XMLParser(huge_tree=True)
-    for source in SOURCES:
-        doc = download_archive(source['dump_url'])
-        names = list(parse(
-            etree.XML(doc, parser=parser), 
-            source['root'], source['xpath'], source['where'], source['ignore'],
-        ))
-        data.extend([{'name': n, 'author': source['author']} for n in names])
-        counts[source['author']] += len(names)
+    with open(outfile, 'w') as file_handler:
+        writer = csv.writer(file_handler)
+        for source in SOURCES:
+            doc = download_archive(source['dump_url'])
+            names = parse(
+                etree.XML(doc, parser=parser), 
+                source['root'],
+                source['xpath'],
+                source['where'],
+                source['ignore'],
+                source['strip']
+            )
+            for n in names:
+                writer.writerow([n, source['author']])
+                authors[source['author']] += 1
+                vocab.update(n)
 
-    with open(outfile, 'wb') as file_handler:
-        pickle.dump(data, file_handler)
+    vocab_list, counts = zip(*vocab.most_common())
+    vocab_order = ['', '▶', '◀'] + list(vocab_list)
+    vocab_map = {char: i for i, char in enumerate(vocab_order)}
+    vocab_freq = [0, 0, 0] + [counts[i] / sum(counts) for i in range(len(vocab_list))]
+    author_list, counts = zip(*authors.most_common())
+    author_order = list(author_list)
+    author_map = {author: i for i, author in enumerate(author_order)}
+    with open('{}.meta'.format(outfile), 'wb') as file_handler:
+        pickle.dump((vocab_map, vocab_freq, author_map), file_handler)
 
     print('Wiki counts:')
-    print(counts)
+    print('Vocab size', len(vocab_map))
+    print(authors)
 
-def parse(tree, root, xpath, where, ignore):
+def parse(tree, root, xpath, where, ignore, strip):
     """A generator for parsing a wikia data tree."""
     ns = {'n': tree.nsmap[None]}
     root = tree.xpath(root, namespaces=ns)
@@ -44,6 +61,8 @@ def parse(tree, root, xpath, where, ignore):
             title = node.xpath(xpath, namespaces=ns, smart_strings=False)[0]
             blacklist = [re.search(x, title) for x in ignore]
             if not any(blacklist):
+                for suffix in strip:
+                    title = re.sub(suffix, '', title)
                 print(title)
                 yield title
 

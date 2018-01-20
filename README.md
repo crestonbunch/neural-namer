@@ -3,9 +3,6 @@
 A character RNN that learns how to emulate the styles of names of different
 fantasy authors.
 
-Implemented in TensorFlow with RNN cells based on the following paper:
-https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/rnn_ctxt.pdf
-
 Usage
 =====
 
@@ -34,14 +31,7 @@ virtual environment is created, you can enter it with:
 Scrape data
 -----------
 
-    $ crawl wikia --out crawler/wikia/data/names.pkl
-
-Preprocess data
----------------
-
-    $ preprocess --in crawler/wikia/data/names.pkl \
-                 --out preprocessor/data/vectors.pkl \
-                 --lookup preprocessor/data/lookup.pkl
+    $ crawl wikia --out crawler/wikia/data/names.csv
 
 Train the model
 ---------------

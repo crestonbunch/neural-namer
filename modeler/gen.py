@@ -12,20 +12,30 @@ from modeler.network import Network
 def gen(savedir, lookupfile, datafile, author, num):
     """Generate a sequence from the model stored in the logdir."""
 
-    with open(datafile, 'rb') as file_handler:
-        samples, authors = pickle.load(file_handler)
-        vocab_size = max(max(samples))
-        author_size = max(authors) + 1
+    with open('{}.meta'.format(datafile), 'rb') as file_handler:
+        vocab_map, _, author_map = pickle.load(file_handler)
+        vocab_size = len(vocab_map)
+        author_size = len(author_map)
 
-    with open(lookupfile, 'rb') as file_handler:
-        lookup, reverse_lookup, author_lookup, _ = pickle.load(file_handler)
-        author = author_lookup[author]
+        index_map = {i: char for char, i in vocab_map.items()}
 
     with open(os.path.join(savedir, 'params.pkl'), 'rb') as file_handler:
         params = pickle.load(file_handler)
 
-    params.training = False
-    network = Network(vocab_size, author_size, **vars(params))
+    sequences = tf.placeholder(tf.int32, [None, None])
+    labels = tf.placeholder(tf.int32, [None, None])
+    weights = tf.placeholder(tf.float32, [None, None])
+    contexts = tf.placeholder(tf.int32, [None, None])
+    network = Network(
+        sequences,
+        labels,
+        weights,
+        contexts,
+        vocab_size,
+        author_size,
+        **vars(params),
+        training=False,
+    )
 
     config = tf.ConfigProto(allow_soft_placement=True)
     with tf.Session(config=config) as sess:
@@ -37,17 +47,19 @@ def gen(savedir, lookupfile, datafile, author, num):
 
             names = []
 
-            for _ in range(num):
-                seed = random.choice(string.ascii_uppercase)
-                seq = [[lookup[seed]]]
-                auth = [[author]]
-                out = sess.run([network.out_node], {
-                    network.seq_node: seq,
-                    network.auth_node: auth,
-                })
-                
-                seq = list(np.squeeze(np.argmax(out, axis=3)))
-                names.append(seed + ''.join([reverse_lookup[x] if x != 0 else '' for x in seq]))
+            seed = '▶'
+            seq = [[vocab_map[seed]]] * num
+            auth = [[author_map[author]]] * num
+            out, = sess.run([network.out_node], {
+                sequences: seq,
+                contexts: auth,
+            })
+            
+            seqs = np.argmax(out, axis=2)
+            for seq in seqs:
+                name = ''.join([index_map.get(x) for x in seq])
+                # ignore everything after the first end token
+                names.append(name[:name.index('◀')])
 
             return names
         else:

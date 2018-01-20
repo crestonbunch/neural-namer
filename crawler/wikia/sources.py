@@ -10,7 +10,8 @@ SOURCES = [
             "xpath": "./n:revision/n:text/text()",
             "contains": r'''\{\{Infobox Person'''
         },
-        "ignore": [r"^.+:", r"\(.+\)$"]
+        "ignore": [r"^.+:", r"\(.+\)$"],
+        "strip": []
     },
     {
         "author": "George Martin",
@@ -21,7 +22,8 @@ SOURCES = [
             "xpath": "./n:revision/n:text/text()",
             "contains": r'''\{\{Character'''
         },
-        "ignore": [r"^.+:", r"\(.+\)$"]
+        "ignore": [r"^.+:", r"\(.+\)$"],
+        "strip": []
     },
     {
         "author": "Robert Jordan",
@@ -32,7 +34,8 @@ SOURCES = [
             "xpath": "./n:revision/n:text/text()",
             "contains": r'''\{\{ character'''
         },
-        "ignore": [r"^.+:", r"\(.+\)$"]
+        "ignore": [r"^.+:", r"\(.+\)$"],
+        "strip": []
     },
     {
         "author": "Steven Erikson",
@@ -43,7 +46,8 @@ SOURCES = [
             "xpath": "./n:revision/n:text/text()",
             "contains": r'''\[\[Category:(Males|Females)'''
         },
-        "ignore": [r"^.+:", r"\(.+\)$"]
+        "ignore": [r"^.+:", r"\(.+\)$"],
+        "strip": []
     },
     {
         "author": "Brian Jacques",
@@ -54,7 +58,8 @@ SOURCES = [
             "xpath": "./n:revision/n:text/text()",
             "contains": r'''\{\{Character\|'''
         },
-        "ignore": [r"^.+:", r"\(.+\)$"]
+        "ignore": [r"^.+:", r"\(.+\)$"],
+        "strip": []
     },
     {
         "author": "Frank Herbert",
@@ -65,6 +70,7 @@ SOURCES = [
             "xpath": "./n:revision/n:text/text()",
             "contains": r'''\[\[Category:(Males|Females)'''
         },
-        "ignore": [r"^.+:", r"\(.+\)$"]
+        "ignore": [r"^.+:", r"\(.+\)$"],
+        "strip": [r"/XD$", r"/ED$", r"/Featured$"]
     }
 ]
