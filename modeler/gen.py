@@ -24,12 +24,10 @@ def gen(savedir, lookupfile, datafile, author, num):
 
     sequences = tf.placeholder(tf.int32, [None, None])
     labels = tf.placeholder(tf.int32, [None, None])
-    weights = tf.placeholder(tf.float32, [None, None])
     contexts = tf.placeholder(tf.int32, [None, None])
     network = Network(
         sequences,
         labels,
-        weights,
         contexts,
         vocab_size,
         author_size,
@@ -54,12 +52,13 @@ def gen(savedir, lookupfile, datafile, author, num):
                 sequences: seq,
                 contexts: auth,
             })
-            
-            seqs = np.argmax(out, axis=2)
-            for seq in seqs:
-                name = ''.join([index_map.get(x) for x in seq])
-                # ignore everything after the first end token
-                names.append(name[:name.index('◀')])
+            for s in out:
+                ss = [np.random.choice(len(vocab_map), p=x) for x in s]
+                name = ''.join([index_map.get(x) for x in ss])
+                if '◀' in name:
+                    names.append(name[:name.index('◀')])
+                else:
+                    names.append(name)
 
             return names
         else:

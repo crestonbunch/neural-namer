@@ -15,12 +15,12 @@ SOURCES = [
     },
     {
         "author": "George Martin",
-        "dump_url": "http://s3.amazonaws.com/wikia_xml_dumps/g/ga/gameofthrones_pages_current.xml.7z",
+        "dump_url": "http://s3.amazonaws.com/wikia_xml_dumps/i/ic/iceandfire_pages_current.xml.7z",
         "root": "/n:mediawiki/n:page",
         "xpath": "./n:title/text()",
         "where": {
             "xpath": "./n:revision/n:text/text()",
-            "contains": r'''\{\{Character'''
+            "contains": r'''\[\[Category:Characters'''
         },
         "ignore": [r"^.+:", r"\(.+\)$"],
         "strip": []

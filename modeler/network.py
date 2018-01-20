@@ -17,9 +17,8 @@ ACTIVATIONS = {
 
 class Network:
 
-    def __init__(self, seq, labels, weights, contexts, vocab_size, author_size, **kwargs):
+    def __init__(self, seq, labels, contexts, vocab_size, author_size, **kwargs):
         self._vocab_size = vocab_size
-        self._weights = weights
         self._author_size = author_size
         self._input_dropout = kwargs.get('input_dropout', 0.0)
         self._output_dropout = kwargs.get('output_dropout', 0.0)
@@ -65,11 +64,11 @@ class Network:
         output, _, _ = dynamic_decode(decoder, swap_memory=True)
         logits = output.rnn_output
 
-        # weights = tf.sequence_mask(sequence_lengths, dtype=tf.int32)
+        weights = tf.sequence_mask(sequence_lengths, dtype=tf.float32)
         loss = tf.contrib.seq2seq.sequence_loss(
             logits,
             targets,
-            self._weights
+            weights
         )
 
         out = tf.nn.softmax(logits)
