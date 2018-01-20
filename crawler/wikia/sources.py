@@ -72,5 +72,17 @@ SOURCES = [
         },
         "ignore": [r"^.+:", r"\(.+\)$"],
         "strip": [r"/XD$", r"/ED$", r"/Featured$"]
-    }
+    },
+    {
+        "author": "Andrzej Sapkowski",
+        "dump_url": "http://s3.amazonaws.com/wikia_xml_dumps/w/wi/witcher_pages_current.xml.7z",
+        "root": "/n:mediawiki/n:page",
+        "xpath": "./n:title/text()",
+        "where": {
+            "xpath": "./n:revision/n:text/text()",
+            "contains": r'''\[\[Category:Characters in the (short stories|novels)'''
+        },
+        "ignore": [r"^.+:", r"\(.+\)$"],
+        "strip": []
+    },
 ]

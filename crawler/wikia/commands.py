@@ -23,6 +23,7 @@ def fetch(outfile):
     with open(outfile, 'w') as file_handler:
         writer = csv.writer(file_handler)
         for source in SOURCES:
+            print('Parsing {}'.format(source['author']))
             doc = download_archive(source['dump_url'])
             names = parse(
                 etree.XML(doc, parser=parser), 
@@ -63,7 +64,6 @@ def parse(tree, root, xpath, where, ignore, strip):
             if not any(blacklist):
                 for suffix in strip:
                     title = re.sub(suffix, '', title)
-                print(title)
                 yield title
 
 def download_archive(url):
