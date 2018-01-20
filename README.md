@@ -48,12 +48,13 @@ Generate names
 
 Replace 'Tolkien' with another author:
 
-* Tolkien
-* George Martin
-* Robert Jordan
-* Steven Erikson
-* Brian Jacques
-* Frank Herbert
+* Tolkien (Lord of the Rings)
+* George Martin (A Song of Ice and Fire)
+* Robert Jordan (Wheel of Time)
+* Steven Erikson (Malazan)
+* Brian Jacques (Redwall)
+* Frank Herbert (Dune)
+* Andrzej Sapkowski (The Witcher)
 
 Unfinished work
 ===============
@@ -65,140 +66,165 @@ Unfinished work
 Example output
 ==============
 
+One LSTM layer with 1024 nodes trained on about 5000 batches of size 128
+
 ### Tolkien
 
-    Qunorthin
-    Penny (Baggins) Burrows
-    Jase
-    Khlair
-    Wilan
-    Qunaoth
-    Elehild
-    Argeor
-    Haldir
-    Romendacil II
-    Wilda
-    Befgo Baggins II
-    Yávien
-    Halor
-    Inmarë
-    Ele Ilúvatar
-    Rosa Greenhand
-    Galdberry
-    Queel
-    Sarudas Brandybuck
+    Tera II
+    Relagir
+    Balch-king of Angmar
+    Aoedt Gracegirdle
+    Foran
+    Falring
+    Lrgaeg
+    Arphr
+    Ddreil II
+    Hmarsnth Brandybuck
+    Aallmir
+    Flrg
+    Gobae Cotton
+    Ilulmur
+    Balm Hammerhand
+    Garimndo
+    Totm
+    Glrendil
+    Nárian
+    Torgo Boffin
 
 ### George Martin
 
-    Wild man
-    Garean Tyrell
-    Kinarro
-    Orpyle
-    Qhrro
-    Stiera Seastar
-    Kingara
-    Xaro Xhoan Daxos
-    Rockard Lonmouth
-    Ormic Stark
-    Pept Pree
-    Vaserys IITargaryen
-    Joseya Frey
-    Inoi
-    Lonlsa  Stokeworth
-    StmTarly
-    Unfana
-    Stice King
-    Nirven
-    Argon I I Targaryen
+    Uyon Tannister
+    Aonn lBolton
+    Ahmelle
+    Mnsiy
+    Bonnna Lannister
+    Ayonon Poole
+    Radelyn Styft
+    Jisnel Stlmy
+    Gevyne
+    Pernin
+    Lorras Harlaw
+    Ownen
+    Aodnor Velaryon
+    Glhe Blacken
+    Wmrch H Harlaw
+    Lbbert Caswell
+    Myldssa Florent
+    Ltrelle
+    Bssyn
+    Woyne Marry
 
 ### Robert Jordan
 
-    Vaealne Garman
-    Qiine
-    Allon
-    Nalomi
-    Zanion
-    Marem
-    Garyn Trranand
-    Lacine
-    Ha Marran
-    Janyde
-    Carvele
-    Vaeia Connoral
-    WiiTomfaine
-    Qie
-    Romela Cindal
-    Teal n
-    Vaeia Connoral
-    Barlin
-    Ferain
-    Yakobin
+    Damelle Arovni
+    Jakrn Shaeren
+    Dattri
+    Aoiiis
+    Ddathera Aelfdene Casmir Lounault
+    Simril Ondin
+    Tarnen
+    Vardelain
+    Sonarn
+    Ehana
+    Tamind Anshar
+    Eaedeuin
+    Rarlin
+    Aaulp
+    Cenrr e Jaarde
+    Fldii
+    Arelsrin
+    Aiiaael
+    Casaa
+    Fanlnca Hasad
 
 ### Steven Erikson
 
-    Nerarkr
-    Esesthila
-    Xrrloc
-    Urenaas
-    Reth'D'rek
-    Ormal
-    Netra
-    Wieneck
-    Chrpala
-    Janalh
-    Chraran
-    Grenmrog
-    Irgast Rend
-    Nersaras
-    Grnlan
-    Serrl
-    Reulad Sengar
-    Oral
-    Yeaki
-    Xrddershins
+    Cyry
+    Guptan Throe
+    Tiindit Purrble
+    JeraThuran
+    Renu
+    Lnarcipor Reese
+    Haicman
+    Dakao Trumb
+    Gefh'Dener
+    Glirlas Dnnda
+    Tangl
+    Blkdan
+    Sararchar
+    Bether
+    Redtron
+    Raorl
+    Lcarv
+    Aet'er
+    Enreëor
+    Hponcipor Reese
 
 ### Brian Jacques
 
-    Thubbaggs
-    Dankle
-    Urcril
-    Orlback
-    Darfle
-    Mario
-    Urtan
-    Arrum Vole
-    DainpMie Slayer
-    Ringar Skurr
-    Wilger
-    Riona Stinkh
-    Daubblewick
-    Zailt the Shade
-    Zarig
-    Ardis
-    YooKarr
-    Marfo
-    Laddtail
-    Ord Jarge
+    RaobeuSpinney
+    Yhmel
+    Bertssckt Siifurd
+    Dovftar Brookback
+    Blaggoail
+    Kister Natena
+    Grunkeose
+    Faotoe
+    Erucjeg
+    Sabtmee
+    Frother Eerdale
+    Uiskie
+    Poplurook the Wanderer
+    Sizg
+    Wonga
+    Fenbuck
+    Eouncane
+    Beirl
+    DreFleck
+    Sumga
 
 ### Frank Herbert
 
-    Paudoid Valleck
-    Yoette Hagal
-    Jenar
-    Mares
-    Orlop
-    Chaopatra
-    Wensicia Corrino
-    Thelia Ietler
-    Paidias Latzko
-    Hapar Fen Ajidica
-    Yorek Thurr
-    Quentin Butler
-    Leechine
-    Jenets Milam
-    Duncmis Atreides
-    Narma Cenva/XD
-    Uliet
-    Wensicia Corrino
-    Werdra Butler
-    Garusne Itreides
+    Cogvoa
+    Tanein Frur
+    Ciuillo
+    Rgeaun Gcru
+    Hlee
+    Forcy
+    Cutise
+    Luqif
+    Svkis  Daruino II
+    Smharl Cdreides
+    Legunza Thorvald
+    Jllxas
+    Ertane Bolitle
+    Halbarassa
+    Maglr
+    Car
+    Lasifr Corrino
+    Clrrsta
+    Klplssa
+    Firin
+
+### Andrzej Sapkowski
+
+    Vainfr
+    Altckammer
+    Fimille
+    Biimaana Fichelet
+    Aosnis Cranmer
+    Ayo Bucnarit
+    Vractrrga
+    Iuvnidam
+    Eonqueline
+    Piaiu
+    Ahnlgi
+    Masko Bruys
+    Serengci  Hofmeier
+    Dammort Stammelford
+    Leineman
+    Sdbades Fierabras
+    Prifcin of Temeria
+    Yddegast
+    Racielion
+    Hhefli
