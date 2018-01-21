@@ -71,6 +71,6 @@ class Network:
             weights
         )
 
-        out = tf.nn.softmax(logits)
+        out = output.sample_id
 
         return targets, loss, out

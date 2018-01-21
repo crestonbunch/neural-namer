@@ -66,165 +66,163 @@ Unfinished work
 Example output
 ==============
 
-One LSTM layer with 1024 nodes trained on about 5000 batches of size 128
-
 ### Tolkien
 
-    Tera II
-    Relagir
-    Balch-king of Angmar
-    Aoedt Gracegirdle
-    Foran
-    Falring
-    Lrgaeg
-    Arphr
-    Ddreil II
-    Hmarsnth Brandybuck
-    Aallmir
-    Flrg
-    Gobae Cotton
-    Ilulmur
-    Balm Hammerhand
-    Garimndo
-    Totm
-    Glrendil
-    Nárian
-    Torgo Boffin
+    Sabgana
+    Twor
+    Phingol
+    Thorondir
+    Harlat
+    Imrahil
+    Atanatar II
+    Bars
+    Faramir
+    Tar-Vanimeldë
+    Gilfanon
+    Laurc Baggins
+    Elbhir
+    Golmberry
+    Falco Chubb-Baggins
+    Bosco Boffin
+    Drogo Baggins
+    Arveleg I
+    Amlaith
+    Celegorm
 
 ### George Martin
 
-    Uyon Tannister
-    Aonn lBolton
-    Ahmelle
-    Mnsiy
-    Bonnna Lannister
-    Ayonon Poole
-    Radelyn Styft
-    Jisnel Stlmy
-    Gevyne
-    Pernin
-    Lorras Harlaw
-    Ownen
-    Aodnor Velaryon
-    Glhe Blacken
-    Wmrch H Harlaw
-    Lbbert Caswell
-    Myldssa Florent
-    Ltrelle
-    Bssyn
-    Woyne Marry
+    Doger Corne
+    Jon Mooton
+    Yareth II Gardener
+    Waymar Royce
+    Harry Rivers
+    Langor Llegane
+    Steffon Stackspear
+    Tytos Lannister
+    Doreah
+    Morrec
+    Lina Tyrell
+    Indrew Locke
+    Walderan Tarbeck
+    Lyonel Frey
+    Ashera Mallister
+    Hobb
+    Ryman Frey
+    Imry Florent
+    Benjicot Blackwood
+    Bess Bracken
 
 ### Robert Jordan
 
-    Damelle Arovni
-    Jakrn Shaeren
-    Dattri
-    Aoiiis
-    Ddathera Aelfdene Casmir Lounault
-    Simril Ondin
-    Tarnen
-    Vardelain
-    Sonarn
-    Ehana
-    Tamind Anshar
-    Eaedeuin
-    Rarlin
-    Aaulp
-    Cenrr e Jaarde
-    Fldii
-    Arelsrin
-    Aiiaael
-    Casaa
-    Fanlnca Hasad
+    Emilyn Arganya
+    Kari Thane
+    Erac
+    Tylamana
+    Mirane Larinen
+    Kiam Lopiang
+    Mevarin
+    Malindhe
+    Alvon
+    Elenar
+    Corile
+    Setsuko
+    Loidelan
+    Gaigal Barara
+    Jaechim Carridin
+    Poranala
+    Merean Redhill
+    Anvila
+    Lisandre
+    Jaim Aybara
 
 ### Steven Erikson
 
-    Cyry
-    Guptan Throe
-    Tiindit Purrble
-    JeraThuran
-    Renu
-    Lnarcipor Reese
-    Haicman
-    Dakao Trumb
-    Gefh'Dener
-    Glirlas Dnnda
-    Tangl
-    Blkdan
-    Sararchar
-    Bether
-    Redtron
-    Raorl
-    Lcarv
-    Aet'er
-    Enreëor
-    Hponcipor Reese
+    Unvathana
+    Bowl
+    Rival
+    Kedranle
+    Rogel
+    Bester
+    Hordilo Stinq
+    Tront
+    Sevara
+    Sheala
+    Unk
+    Sekara
+    Hurta Stinq
+    Enesthila
+    Barack
+    Kalsor
+    Erdast Brid
+    Stoop
+    Lane
+    Arba
 
 ### Brian Jacques
 
-    RaobeuSpinney
-    Yhmel
-    Bertssckt Siifurd
-    Dovftar Brookback
-    Blaggoail
-    Kister Natena
-    Grunkeose
-    Faotoe
-    Erucjeg
-    Sabtmee
-    Frother Eerdale
-    Uiskie
-    Poplurook the Wanderer
-    Sizg
-    Wonga
-    Fenbuck
-    Eouncane
-    Beirl
-    DreFleck
-    Sumga
+    Gilly
+    Brather Karryw
+    Thurdale
+    Melko
+    Mariel Gullwhacker
+    Toobles
+    Diiger
+    Durby Furrel
+    Burrem
+    Nutclaw
+    Clarissa
+    Droppaw
+    Brink Greyspoke
+    Gullger
+    Rankacul
+    Boal
+    Martin the Warrior
+    Ranguvar Foeseeker
+    Hookfin
+    Ruggan Bor
 
 ### Frank Herbert
 
-    Cogvoa
-    Tanein Frur
-    Ciuillo
-    Rgeaun Gcru
-    Hlee
-    Forcy
-    Cutise
-    Luqif
-    Svkis  Daruino II
-    Smharl Cdreides
-    Legunza Thorvald
-    Jllxas
-    Ertane Bolitle
-    Halbarassa
-    Maglr
-    Car
-    Lasifr Corrino
-    Clrrsta
-    Klplssa
-    Firin
+    Fabiin Corrino
+    Gimin Fenring
+    Claude Jozziny
+    Sheeana Brugh
+    Whisicka Corrino
+    Geoff
+    Hivar Sen Ajidica
+    Bital
+    Mesa Ecaz
+    Windhal Corrino III
+    Bhek Tenring
+    Tyros Reffa
+    Alia Atreides
+    Antine
+    Doris Bhrazen
+    Wellington Yueh/DE
+    Tosia Obregah-Xo
+    Germon Tero
+    Lutier Corrino II
+    Spite Blis
 
 ### Andrzej Sapkowski
 
-    Vainfr
-    Altckammer
-    Fimille
-    Biimaana Fichelet
-    Aosnis Cranmer
-    Ayo Bucnarit
-    Vractrrga
-    Iuvnidam
-    Eonqueline
-    Piaiu
-    Ahnlgi
-    Masko Bruys
-    Serengci  Hofmeier
-    Dammort Stammelford
-    Leineman
-    Sdbades Fierabras
-    Prifcin of Temeria
-    Yddegast
-    Racielion
-    Hhefli
+    Amdario Bach
+    Echel Traighlethan
+    Donimir of Troy
+    Jocco Held
+    Ovo Mirce
+    Vinesne
+    Xyhal Pratt
+    Marilka
+    Tazie
+    Drofuss
+    Yuzzing
+    Patett
+    Hithle
+    Helmis Farrowtauserithe
+    Radovid III
+    Tarolina Roberta
+    Willem
+    Yavvina
+    Nozorn
+    Carthia van Canten

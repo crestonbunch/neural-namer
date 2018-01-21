@@ -52,9 +52,8 @@ def gen(savedir, lookupfile, datafile, author, num):
                 sequences: seq,
                 contexts: auth,
             })
-            for s in out:
-                ss = [np.random.choice(len(vocab_map), p=x) for x in s]
-                name = ''.join([index_map.get(x) for x in ss])
+            for seq in out:
+                name = ''.join([index_map.get(x) for x in seq])
                 if '◀' in name:
                     names.append(name[:name.index('◀')])
                 else:
