@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "jsx": "react",
+    "lib": ["es2015", "dom"],
+    "module": "es6",
+    "moduleResolution": "node",
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "target": "es5"
+  },
+  "exclude": ["node_modules"]
+}

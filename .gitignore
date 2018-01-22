@@ -1,3 +1,7 @@
+# web files
+web/node_modules/
+web/dist/
+
 # Data folder
 data/
 cache/

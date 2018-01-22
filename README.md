@@ -3,13 +3,11 @@
 A character RNN that learns how to emulate the styles of names of different
 fantasy authors.
 
-Usage
-=====
+# Usage
 
 Recommended process is to setup a Python Virtual environment.
 
-First time setup
-----------------
+## First time setup
 
 This will create a Python virtual environment, and install the necessary
 packages only for this project.
@@ -20,30 +18,25 @@ packages only for this project.
     $ pip install -r requirements.txt
     $ python setup.py develop
 
-Running from the virtual environment
-------------------------------------
+## Running from the virtual environment
 
 Make sure you run the commands from inside the virtual environment, once the
 virtual environment is created, you can enter it with:
 
     $ source venv/bin/activate
 
-Scrape data
------------
+## Scrape data
 
     $ crawl wikia --out crawler/wikia/data/names.csv
 
-Train the model
----------------
+## Train the model
 
-    $ model train --data preprocessor/data/vectors.pkl --save modeler/logs/1
+    $ model train --data crawler/wikia/data/names.csv --save modeler/logs/1
 
-Generate names
---------------
+## Generate names
 
-    $ model gen --data preprocessor/data/vectors.pkl \
-                --lookup preprocessor/data/lookup.pkl \
-                --save modeler/logs/1 \
+    $ model gen --save modeler/logs/1 \
+                --data crawler/wikia/data/names.csv \
                 --author "Tolkien"
 
 Replace 'Tolkien' with another author:
@@ -56,173 +49,26 @@ Replace 'Tolkien' with another author:
 * Frank Herbert (Dune)
 * Andrzej Sapkowski (The Witcher)
 
-Unfinished work
-===============
+## Web interface
 
-* Collect more training data
-* Create a web interface
-* Explore alternative models
+TODO: currently only networks with one LSTM cell are supported by the web interface.
+Don't try to migrate a model with more than one LSTM cell!
+It might work, but your model certainly won't generate correct outputs.
 
-Example output
-==============
+To migrate Tensorflow models into the web directory:
 
-### Tolkien
+    $ python scripts/migrate.py \
+        --data crawler/wikia/data/names.csv\
+        --checkpoint modeler/logs/1/model.ckpt-5600
 
-    Sabgana
-    Twor
-    Phingol
-    Thorondir
-    Harlat
-    Imrahil
-    Atanatar II
-    Bars
-    Faramir
-    Tar-Vanimeldë
-    Gilfanon
-    Laurc Baggins
-    Elbhir
-    Golmberry
-    Falco Chubb-Baggins
-    Bosco Boffin
-    Drogo Baggins
-    Arveleg I
-    Amlaith
-    Celegorm
+Replace the `-5600` suffix with the last checkpoint in your directory
 
-### George Martin
+To run the web interface
 
-    Doger Corne
-    Jon Mooton
-    Yareth II Gardener
-    Waymar Royce
-    Harry Rivers
-    Langor Llegane
-    Steffon Stackspear
-    Tytos Lannister
-    Doreah
-    Morrec
-    Lina Tyrell
-    Indrew Locke
-    Walderan Tarbeck
-    Lyonel Frey
-    Ashera Mallister
-    Hobb
-    Ryman Frey
-    Imry Florent
-    Benjicot Blackwood
-    Bess Bracken
+    $ cd web/
+    $ yarn install
+    $ webpack-dev-server
+    $ firefox localhost:8080
 
-### Robert Jordan
-
-    Emilyn Arganya
-    Kari Thane
-    Erac
-    Tylamana
-    Mirane Larinen
-    Kiam Lopiang
-    Mevarin
-    Malindhe
-    Alvon
-    Elenar
-    Corile
-    Setsuko
-    Loidelan
-    Gaigal Barara
-    Jaechim Carridin
-    Poranala
-    Merean Redhill
-    Anvila
-    Lisandre
-    Jaim Aybara
-
-### Steven Erikson
-
-    Unvathana
-    Bowl
-    Rival
-    Kedranle
-    Rogel
-    Bester
-    Hordilo Stinq
-    Tront
-    Sevara
-    Sheala
-    Unk
-    Sekara
-    Hurta Stinq
-    Enesthila
-    Barack
-    Kalsor
-    Erdast Brid
-    Stoop
-    Lane
-    Arba
-
-### Brian Jacques
-
-    Gilly
-    Brather Karryw
-    Thurdale
-    Melko
-    Mariel Gullwhacker
-    Toobles
-    Diiger
-    Durby Furrel
-    Burrem
-    Nutclaw
-    Clarissa
-    Droppaw
-    Brink Greyspoke
-    Gullger
-    Rankacul
-    Boal
-    Martin the Warrior
-    Ranguvar Foeseeker
-    Hookfin
-    Ruggan Bor
-
-### Frank Herbert
-
-    Fabiin Corrino
-    Gimin Fenring
-    Claude Jozziny
-    Sheeana Brugh
-    Whisicka Corrino
-    Geoff
-    Hivar Sen Ajidica
-    Bital
-    Mesa Ecaz
-    Windhal Corrino III
-    Bhek Tenring
-    Tyros Reffa
-    Alia Atreides
-    Antine
-    Doris Bhrazen
-    Wellington Yueh/DE
-    Tosia Obregah-Xo
-    Germon Tero
-    Lutier Corrino II
-    Spite Blis
-
-### Andrzej Sapkowski
-
-    Amdario Bach
-    Echel Traighlethan
-    Donimir of Troy
-    Jocco Held
-    Ovo Mirce
-    Vinesne
-    Xyhal Pratt
-    Marilka
-    Tazie
-    Drofuss
-    Yuzzing
-    Patett
-    Hithle
-    Helmis Farrowtauserithe
-    Radovid III
-    Tarolina Roberta
-    Willem
-    Yavvina
-    Nozorn
-    Carthia van Canten
+There is no web backend, which means you can serve the web interface
+from any service that can serve static HTML, CSS, and JavaScript. E.g. GitHub pages.

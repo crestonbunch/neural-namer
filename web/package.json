@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "deeplearn": "^0.4.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "semantic-ui-react": "^0.77.2",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^16.0.34",
+    "@types/react-dom": "^16.0.3",
+    "copy-webpack-plugin": "^4.3.1",
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
+    "uglifyjs-webpack-plugin": "^1.1.6",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.1"
+  },
+  "name": "neural-namer",
+  "version": "1.0.0",
+  "description": "Generate fantasy names with neural networks",
+  "main": "index.tsx",
+  "repository": "github.com/crestonbunch/neural-namer",
+  "author": "Creston Bunch",
+  "license": "MIT",
+  "private": false
+}

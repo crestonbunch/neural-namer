@@ -37,8 +37,14 @@ class Network:
         batch_size = tf.shape(sequence)[0]
 
         sequence_lengths = tf.cast(tf.count_nonzero(sequence, axis=1), tf.int32)
-        embedding = tf.Variable(tf.random_normal((self._vocab_size, self._embed_size)))
-        context = tf.Variable(tf.random_normal((self._author_size, self._ctx_size)))
+        embedding = tf.Variable(
+            tf.random_normal((self._vocab_size, self._embed_size)),
+            name='char_embedding'
+        )
+        context = tf.Variable(
+            tf.random_normal((self._author_size, self._ctx_size)),
+            name='ctx_embedding'
+        )
 
         embedded_sequence = tf.nn.embedding_lookup(embedding, sequence)
         embedded_authors = tf.nn.embedding_lookup(context, authors)
@@ -59,7 +65,9 @@ class Network:
         cell = MultiRNNCell(cells)
 
         init_state = cell.zero_state(batch_size, tf.float32)
-        dense = tf.layers.Dense(self._vocab_size, self._activation)
+        dense = tf.layers.Dense(
+            self._vocab_size, self._activation, name='fully_connected'
+        )
         decoder = BasicDecoder(cell, helper, init_state, dense)
         output, _, _ = dynamic_decode(decoder, swap_memory=True)
         logits = output.rnn_output
