@@ -1,7 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
   context: path.resolve(__dirname),
@@ -38,6 +37,5 @@ module.exports = {
       { from: path.join(__dirname, "src", "index.html") }
     ]),
     new webpack.HotModuleReplacementPlugin()
-  ],
-  watch: true
+  ]
 };

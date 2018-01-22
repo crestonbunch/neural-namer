@@ -21,7 +21,7 @@ export default class Names extends React.PureComponent<NameProps, {}> {
               {Array.from(weights).map(
                 ([author, weight]) =>
                   weight > 0 ? (
-                    <Label>
+                    <Label key={author}>
                       {author}
                       <Label.Detail>
                         {`${(weight * 100).toFixed(0)}%`}
