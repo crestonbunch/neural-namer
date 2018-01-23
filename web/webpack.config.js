@@ -36,6 +36,9 @@ module.exports = {
       },
       { from: path.join(__dirname, "src", "index.html") }
     ]),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.DefinePlugin({
+      BASE_URL: "'http://localhost:8080'"
+    })
   ]
 };

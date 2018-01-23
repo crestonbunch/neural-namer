@@ -22,47 +22,47 @@
   "decoder/fully_connected/kernel": {
     "filename": "decoder_fully_connected_kernel",
     "shape": [
-      128,
+      512,
       85
     ]
   },
   "decoder/multi_rnn_cell/cell_0/basic_lstm_cell/bias": {
     "filename": "decoder_multi_rnn_cell_cell_0_basic_lstm_cell_bias",
     "shape": [
-      512
+      2048
     ]
   },
   "decoder/multi_rnn_cell/cell_0/basic_lstm_cell/kernel": {
     "filename": "decoder_multi_rnn_cell_cell_0_basic_lstm_cell_kernel",
     "shape": [
-      160,
-      512
+      544,
+      2048
     ]
   },
   "decoder/multi_rnn_cell/cell_0/output_ctx/bias": {
     "filename": "decoder_multi_rnn_cell_cell_0_output_ctx_bias",
     "shape": [
-      128
+      512
     ]
   },
   "decoder/multi_rnn_cell/cell_0/output_ctx/kernel": {
     "filename": "decoder_multi_rnn_cell_cell_0_output_ctx_kernel",
     "shape": [
-      136,
-      128
+      520,
+      512
     ]
   },
   "decoder/multi_rnn_cell/cell_0/state_ctx/bias": {
     "filename": "decoder_multi_rnn_cell_cell_0_state_ctx_bias",
     "shape": [
-      128
+      512
     ]
   },
   "decoder/multi_rnn_cell/cell_0/state_ctx/kernel": {
     "filename": "decoder_multi_rnn_cell_cell_0_state_ctx_kernel",
     "shape": [
-      136,
-      128
+      520,
+      512
     ]
   }
 }

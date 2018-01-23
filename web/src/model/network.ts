@@ -87,7 +87,7 @@ export default class Network {
     );
     let c = [Array2D.zeros([1, this.LSTMBias.shape[0] / 4])];
     let h = [Array2D.zeros([1, this.LSTMBias.shape[0] / 4])];
-    let prime = await this.embedCharacter("▶");
+    let prime = await this.embedCharacter("\u25B6");
     for (let i = 0; i < MAX_LEN; i++) {
       const batch = prime;
       const LSTMState = math.multiRNNCell([contextCell], prime, c, h);
@@ -103,7 +103,7 @@ export default class Network {
         .asScalar()
         .val();
       const characterOutput = this.indexMap[sampledOutput];
-      if (characterOutput === "◀") {
+      if (characterOutput === "\u25C0") {
         break;
       }
       const result = results.push(characterOutput);

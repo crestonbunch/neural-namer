@@ -86,21 +86,18 @@ export default class Generator extends React.PureComponent<
             onChange={this.onWeightsChange}
           />
         </Segment>
-        <Segment attached="bottom">
-          <Button
-            disabled={this.state.disabled}
-            loading={this.state.disabled}
-            fluid
-            labelPosition="right"
-            onClick={this.onGenerate}
-            primary
-            positive
-            icon
-          >
-            Generate
-            <Icon name="add" />
-          </Button>
-        </Segment>
+        <Button
+          attached="bottom"
+          disabled={this.state.disabled}
+          loading={this.state.disabled}
+          fluid
+          onClick={this.onGenerate}
+          primary
+          positive
+          size="large"
+        >
+          Generate
+        </Button>
       </>
     );
   }

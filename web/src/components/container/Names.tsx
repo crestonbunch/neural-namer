@@ -1,5 +1,7 @@
 import * as React from "react";
-import { Label, Segment } from "semantic-ui-react";
+import { Grid, Label, Segment } from "semantic-ui-react";
+
+import Share from "./Share";
 
 interface NameProps {
   names: Array<[string, Map<string, number>]>;
@@ -14,7 +16,14 @@ export default class Names extends React.PureComponent<NameProps, {}> {
       return (
         <React.Fragment key={name}>
           <Segment attached="top" color="black" size="huge">
-            {name}
+            <Grid>
+              <Grid.Row columns={2}>
+                <Grid.Column>{name}</Grid.Column>
+                <Grid.Column textAlign="right">
+                  <Share name={name} weights={weights} />
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
           </Segment>
           <Segment attached="bottom" size="tiny">
             <Label.Group>

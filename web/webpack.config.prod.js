@@ -15,6 +15,9 @@ module.exports = merge(baseConfig, {
       },
       { from: path.join(__dirname, "src", "index.html") }
     ]),
-    new UglifyJsPlugin()
+    new UglifyJsPlugin(),
+    new webpack.DefinePlugin({
+      BASE_URL: "https://crestonbunch.github.io/neural-namer-demo"
+    })
   ]
 });

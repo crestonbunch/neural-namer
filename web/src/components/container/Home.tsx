@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Container, Header, Loader, Segment } from "semantic-ui-react";
 
 import Generator from "./Generator";
 import Names from "./Names";
@@ -25,13 +24,10 @@ export default class Home extends React.PureComponent<{}, HomeState> {
   };
   render() {
     return (
-      <Container text>
-        <Header as="h2" textAlign="center">
-          Neural Name Generator
-        </Header>
+      <>
         <Generator onGenerate={this.onGenerate} />
         {this.state.names.length > 0 && <Names names={this.state.names} />}
-      </Container>
+      </>
     );
   }
 }
