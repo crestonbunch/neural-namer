@@ -3,6 +3,8 @@
 A character RNN that learns how to emulate the styles of names of different
 fantasy authors.
 
+Demo: https://crestonbunch.github.io/neural-namer-demo/
+
 # Usage
 
 Recommended process is to setup a Python Virtual environment.
